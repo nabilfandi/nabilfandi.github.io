@@ -16,9 +16,16 @@ h1, .h1 {
   }
 }
 h2, .h2 {
+  color: #337ab7;
+  font-weight: 600;
   font-size: 30px;
 }
+h2 small {
+  color: #A6D331;
+  font-weight: 400;
+}
 h3, .h3 {
+  color: #337ab7;
   font-size: 28px;
   margin: 20px 0 10px;
 }
@@ -39,7 +46,7 @@ p {
   font-size: 16px;
   line-height: 25.8px;
 }
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+h1 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
   color: #9a9a9a;
   font-weight: 300;
   line-height: 1.5;
@@ -77,7 +84,8 @@ body {
   font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
 }
 a {
-  color: #2ca8ff;
+  color: #337ab7;
+  font-weight: 600;
 }
 a:hover, a:focus {
   color: #109cff;
@@ -239,6 +247,14 @@ button::-moz-focus-inner {
 }
 .section.section-gray {
   background-color: #EEEEEE;
+}
+.section.section-blue {
+  background-color: #337AB7;
+  padding-bottom: 60px 0;
+}
+.section.section-blue .title {
+  color: #fff;
+  margin-bottom: 50px;
 }
 .section-light {
     background-color: #F5F5F5;
@@ -424,16 +440,6 @@ button::-moz-focus-inner {
 }
 .navbar-toggle.navbar-default .navbar-toggle:hover, .navbar-toggle.navbar-default .navbar-toggle:focus {
   background-color: transparent;
-}
-.footer {
-  background-color: #999;
-  line-height: 20px;
-}
-.footer nav > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
 }
 .card {
   border-radius: 6px;
@@ -648,13 +654,15 @@ button::-moz-focus-inner {
     width: 100%;
 }
 .motto h1 {
-  font-size: 60px;
+  font-size: 30px;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 50px;
 }
 .motto h2 {
-  font-size: 20px;
-  width: 50%;
-  margin: 0 auto;
-  line-height: 35px;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
 }
 @media (max-width: 767px){
   .logo-container .brand{
@@ -693,4 +701,47 @@ button::-moz-focus-inner {
 .navbar-default .navbar-nav > .dropdown > a.btn-neutral:focus .caret {
     border-bottom-color: #888888;
     border-top-color: #888888;
+}
+.footer {
+  background-color: #262626;
+  color: #999999;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.footer .social-area {
+  padding: 0px 0 10px;
+}
+.footer .social-area h4 {
+  margin-bottom: 15px;
+}
+.btn-social {
+  opacity: 0.85;
+  padding: 8px 9px;
+}
+.btn-social.btn-round {
+  padding: 9px 11px;
+}
+.social-area .btn {
+  margin: 0 5px;
+  color: #FFF;
+  border-color: #FFF;
+}
+.btn-social .fa {
+  font-size: 18px;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+}
+.btn-round {
+  border-width: 1px;
+  border-radius: 30px !important;
+  opacity: 0.79;
+  padding: 9px 18px;
+}
+.footer .credits {
+  padding: 25px 0 15px;
+  text-align: center;
+}
+.footer .heart {
+    color: #F74933;
 }
